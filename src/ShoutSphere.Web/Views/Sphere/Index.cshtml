@@ -1,0 +1,23 @@
+﻿@model ShoutSphere.Domain.Sphere
+
+@{
+    ViewBag.Title = "Sphere shouts!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<fieldset>
+    <legend>Sphere</legend>  
+    <div class="display-field">@Html.DisplayFor(model => model.SphereTitle)</div>
+    <ul>
+     @foreach (var shout in Model.Shouts)
+    {
+         <li>
+            <div class="display-field">@shout.ShoutSentence</div>
+            <div class="display-field">@shout.CratedAt</div>
+         </li>
+    }
+    </ul>
+</fieldset>
+

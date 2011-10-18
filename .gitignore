@@ -1,3 +1,16 @@
 # RESHARPER #
 #############
 _ReSharper*
+
+# Visual Studio #
+#################
+*.suo
+*.user
+
+# binaries folders #
+####################
+src/*/bin
+src/*/obj
+test/*/bin
+test/*/obj
+
